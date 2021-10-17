@@ -1,11 +1,11 @@
 1. `i` would be be logged (3). Even though `i` is declared inside the for loop, it is declared with `var` so it can still be accessed anywhere in the function
-2. `discountedPrice` would be logged. Even though `discountedPrice` is declared inside the for loop, it is declared with `var` so it can still be accessed anywhere in the function
-3. `finalPrice` would be logged, no error would error because it was declared outside the for loop
+2. `discountedPrice` (150) would be logged. Even though `discountedPrice` is declared inside the for loop, it is declared with `var` so it can still be accessed anywhere in the function
+3. `finalPrice` (150) would be logged, no error would error because it was declared outside the for loop
 4. The function will return the final `discounted` array, [50, 100, 150]. This is result we get after going through the entire for loop and applying the appropriate discount (0.5) It is declared using `var` therefore the variable will be allowed to be used throughout the function.
 5. Error, because `i` is in the scope of the for loop declared using `let` and the console log is outside of the for loop
 6. Error, because `discountedPrice` is in the scope of the for loop declared using `let`, so block scope will cause an error when console logging. 
-7. `finalPrice` would be logged, no error would error because `finalPrice` was declared with `let` and is in the same block as the console log
-8. The function will return the final `discounted` array. This is result we get after going through the entire for loop and applying the appropriate discount (0.5) Although it is declared with `let` it is still in the same block. 
+7. `finalPrice` (150) would be logged, no error would error because `finalPrice` was declared with `let` and is in the same block as the console log
+8. The function will return the final `discounted` array, [50, 100, 150]. This is result we get after going through the entire for loop and applying the appropriate discount (0.5) Although it is declared with `let` it is still in the same block. 
 9. Error, because `i` is in the scope of the for loop declared using `let` and the console log is outside of the for loop
 10. The length of prices (3) will be console logged. `length` was declared as a const so it should remain the same constant throughout the function
 11. The function will return the final `discounted` array, [50, 100, 150]. his is result we get after going through the entire for loop and applying the appropriate discount (0.5). Although `discounted` is declared using `const`, conventions allow us to push to a `const` variable. 
