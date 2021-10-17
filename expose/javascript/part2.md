@@ -40,7 +40,8 @@ F. true, because Boolean(2) is true since it's anything but 0, so true === true 
 15. == checks equality with type conversion (ex. 0 to false vice versa) while === checks equality without type conversion (the literal value)
 16. Found in part2-question16.js, console logs the values accordingly
 17. Calling `modifyArray[1,2,3], doSomething)` first creates `newArr` array, then we iterate through the array `[1,2,3]` and push the result of the current array index value passed to the callback function `doSomething` to `newArr`. `doSomething` takes a given number and multiplies by 2, so we push `array[0] * 2` which is `1 * 2`. We proceed with the rest, leading to pushing `2 * 2`, and `3 * 2`. Our end result is `[2,4,6]`.
-18. 
+18. Found in part2-question18.js
+19. 
 ```
 1
 2
